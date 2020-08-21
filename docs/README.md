@@ -1,2 +1,2 @@
-# iOS Calculator Clone
+# Calculator 
 A simple looking Calculator for performing simple & basic Math operations.
