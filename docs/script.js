@@ -1,5 +1,3 @@
-//This is all the javascript code for the Calculator
-
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
@@ -97,5 +95,3 @@ function init() {
 }
 
 init();
-
-//End
