@@ -1,69 +1,66 @@
-html{
-	box-sizing: border-box;
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: grey;
+}
+.wrapper {
+    margin: 25px auto;
+    width: 400px;
+    color: #fff;
+}
+.screen {
+    background-color:#000;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+}
+.calc-button-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.calc-button {
+    background-color: #d8d9db;
+    color: #fff;
+    height: 100px;
+    flex-basis: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+.calc-button:last-child {
+    background-color: #660619;
+    color: white;
+}
+.calc-button:last-child:hover {
+    background-color: #9e5b68;
 }
 
-*,*:before, *:after{
-	box-sizing: inherit;
+.calc-button:last-child:active {
+    background-color: #9e5b68;
 }
-
-body{
-	padding: 0;
-	margin: 0;
-	background-color: grey;
+.calc-button-row:last-child {
+    padding-bottom: 0;
 }
-
-.wrapper{
-	width: 400px;
-	background-color: #000;
-	color: #fff; 
-	margin: 10px auto;
-}
-
-.calc-button-row{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	
-}
-
-.screen{
-	font-family: 'Courier New',Courier,monospace;
-	padding: 20px 5px;
-	text-align: right;
-	font-size: 40px;
-}
-
-.calc-button{
-	background-color:#d8d9db;
-	color: #000;
-	border: none;
-	font-size: 40px;
-	height: 100px;
-	flex-basis: 25%;
-}
-
-.calc-button:hover{
-	background-color: #ebebeb;
-}
-
-.calc-button:active{
-	background-color: #bbbcbe;
-}
-
-button.calc-button.double{
- 	flex-basis: 50%; 
-}
-
-button.calc-button.triple{
-	flex-basis: 75%;
-}
-
-.calc-button:last-child{
-	background-color: #d9974c;
-	color: #fff;
-}
-
-.calc-button:last-child:hover{
-	background-color: #dfb07e;
-}	
-
